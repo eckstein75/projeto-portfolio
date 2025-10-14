@@ -37,6 +37,15 @@ header{
     top: 0;
     z-index: 1;
 }
+#botao-tema {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+#botao-tema:hover {
+  transform: scale(1.2);
+}
 nav#menu ul{
     list-style: none;
     display: flex;
