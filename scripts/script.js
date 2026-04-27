@@ -41,3 +41,26 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+const form = document.getElementById('form-contato');
+const mensagem = document.getElementById('mensagem-sucesso');
+
+if (form) {
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const nome = document.getElementById('nome').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const mensagemTexto = document.getElementById('mensagem').value.trim();
+
+    if (!nome || !email || !mensagemTexto) {
+      alert('Preencha todos os campos obrigatórios!');
+      return;
+    }
+
+    // Simulação de envio
+    mensagem.style.display = 'block';
+
+    form.reset();
+  });
+}

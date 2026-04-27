@@ -148,7 +148,39 @@
           </div>
         </article>
         <!--Fim article#projetos-->
+        <article id="contato">
+  <h2>Contato</h2>
+
+  <form id="form-contato">
+    <div class="campo">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required />
+    </div>
+
+    <div class="campo">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+
+    <div class="campo">
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" name="telefone" />
+    </div>
+
+    <div class="campo">
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+    </div>
+
+    <button type="submit">Enviar Mensagem</button>
+  </form>
+
+  <p id="mensagem-sucesso" style="display: none;">
+    Mensagem enviada com sucesso!
+  </p>
+</article>
       </section>
+      
     </main>
 
     <footer>Portifólio desenvolvido por Mauricio G. Eckstein. Fone (48)998213261</footer>

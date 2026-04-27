@@ -256,6 +256,55 @@ footer a:hover {
   max-height: 200px;
 }
 
+}
 
+#contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
+#contato .campo {
+  display: flex;
+  flex-direction: column;
+}
+
+#contato label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#contato input,
+#contato textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+#contato input:focus,
+#contato textarea:focus {
+  outline: none;
+  border-color: var(--destaque);
+}
+
+#contato button {
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#contato button:hover {
+  background-color: var(--destaque-inverso);
+}
+
+#mensagem-sucesso {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
 }
