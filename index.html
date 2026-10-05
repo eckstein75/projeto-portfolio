@@ -1,189 +1,141 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio Mauricio Gabriel Eckstein</title>
-    <link rel="stylesheet" href="estilos/style.css" />
-  </head>
-  <body>
-    <header>
-      <nav id="menu">
-        <ul>
-          <li><a href="#ficha" class="link">Home</a></li>
-          <li><a href="#skills" class="link">Skills</a></li>
-          <li><a href="#formacao" class="link">Formação</a></li>
-          <li><a href="#projetos" class="link">Projetos</a></li>
-          <li><a href="#" id="botao-tema">Tema</a></li>
-        </ul>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Mauricio Gabriel Eckstein, Desenvolvedor Backend / Full Stack com foco em Node.js, NestJS, TypeScript, React, PostgreSQL e Prisma." />
+  <title>Mauricio Eckstein | Backend / Full Stack Developer</title>
+  <link rel="stylesheet" href="estilos/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio">ME</a>
+      <nav aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a><a href="#stack">Stack</a><a href="#projetos">Projetos</a><a href="#formacao">Formação</a><a href="#contato">Contato</a>
       </nav>
-    </header>
-    <main>
-      <section id="ficha">
-        <img src="imagens/eu.jpg" alt="Mauricio Gabriel Eckstein" />
-        <h1>Mauricio Gabriel Eckstein</h1>
-        <p>
-          Formado em redes de computadores, bacharel em ciências da computação
-        </p>
-        <div id="social">
-          <a href="" target="_blank" rel="nofollow">Linkedin</a>
-          <a href="" target="_blank" rel="nofollow">GitHub</a>
-          <a href="" target="_blank" rel="nofollow">Instagram</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Alternar tema">◐</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">DESENVOLVEDOR BACKEND / FULL STACK</p>
+          <h1>Mauricio Gabriel Eckstein</h1>
+          <p class="hero-text">Desenvolvimento de aplicações web, APIs REST e sistemas de gestão com foco em segurança, regras de negócio, organização de código e produtos SaaS.</p>
+          <div class="tech-line">Node.js • NestJS • TypeScript • React • PostgreSQL • Prisma</div>
+          <div class="actions">
+            <a class="btn primary" href="#projetos">Ver projetos</a>
+            <a class="btn" href="https://github.com/eckstein75" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/mauricio-eckstein/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
         </div>
-      </section>
-      <section id="detalhes">
-        <article id="video">
-          <h2>Deixe-me apresentar</h2>
-        </article>
-        <!--Fim article#video-->
-        <article id="skills">
-          <h2>Minhas Skills</h2>
-          <div id="skill-container">
-            <div class="item">
-              <div class="info">
-                <span class="nome"> HTML </span>
-                <span class="porcent"> 90% </span>
-              </div>
-              <div class="barra">
-                <div class="progresso" style="width: 90%"></div>
-              </div>
-            </div>
+        <div class="hero-card">
+          <span class="status">Disponível para oportunidades</span>
+          <h2>Backend / Full Stack</h2>
+          <p>APIs, autenticação, RBAC, arquitetura multiempresa, banco relacional, testes e interfaces responsivas.</p>
+          <div class="mini-grid"><span>REST APIs</span><span>JWT</span><span>RBAC</span><span>Jest</span><span>Swagger</span><span>GitHub Actions</span></div>
+        </div>
+      </div>
+    </section>
 
-            <div class="item">
-              <div class="info">
-                <span class="nome"> CSS3 </span>
-                <span class="porcent"> 90% </span>
-              </div>
-              <div class="barra">
-                <div class="progresso" style="width: 90%"></div>
-              </div>
-            </div>
+    <section id="sobre" class="section">
+      <div class="container narrow">
+        <p class="eyebrow">SOBRE</p>
+        <h2>Transformando necessidades de negócio em software funcional</h2>
+        <p>Sou desenvolvedor Backend / Full Stack com experiência prática em Node.js, NestJS, TypeScript, React, PostgreSQL e Prisma ORM. Meu foco atual é construir sistemas completos, com atenção a autenticação, autorização, segurança, persistência de dados, testes e experiência do usuário.</p>
+        <p>Meu principal case é o MOVAIQ, uma plataforma SaaS para gestão de transportes e fretes. Também possuo formação e prática em segurança da informação, incluindo laboratório controlado de pentest.</p>
+      </div>
+    </section>
 
-            <div class="item">
-              <div class="info">
-                <span class="nome"> REACT </span>
-                <span class="porcent"> 30% </span>
-              </div>
-              <div class="barra">
-                <div class="progresso" style="width: 30%"></div>
-              </div>
-            </div>
+    <section id="stack" class="section alt">
+      <div class="container">
+        <p class="eyebrow">STACK</p><h2>Tecnologias que utilizo</h2>
+        <div class="cards three">
+          <article class="card"><h3>Backend</h3><p>Node.js, NestJS, TypeScript, Express, REST APIs, JWT, Passport</p></article>
+          <article class="card"><h3>Frontend</h3><p>React, TypeScript, JavaScript, Vite, HTML5, CSS3, responsividade</p></article>
+          <article class="card"><h3>Dados & Qualidade</h3><p>PostgreSQL, SQL, Prisma ORM, Jest, Swagger, Postman, Git, GitHub Actions</p></article>
+        </div>
+      </div>
+    </section>
 
-            <div class="item">
-              <div class="info">
-                <span class="nome"> BANCO DE DADOS </span>
-                <span class="porcent"> 50% </span>
-              </div>
-              <div class="barra">
-                <div class="progresso" style="width: 50%"></div>
-              </div>
+    <section id="projetos" class="section">
+      <div class="container">
+        <p class="eyebrow">PROJETOS</p><h2>Cases em destaque</h2>
+        <article class="project featured">
+          <div class="project-copy">
+            <span class="tag">PROJETO PRINCIPAL</span>
+            <h3>MOVAIQ — Plataforma SaaS de Gestão de Transportes</h3>
+            <p>Sistema completo para gestão de operações de transporte, com backend e frontend separados, autenticação, controle de acesso por perfil, arquitetura multiempresa e módulos operacionais e financeiros.</p>
+            <ul>
+              <li>Autenticação JWT e autorização por perfis (RBAC)</li>
+              <li>Gestão de clientes, motoristas, veículos, cargas e fretes</li>
+              <li>Rastreamento, documentos, despesas, dashboard e auditoria</li>
+              <li>Testes automatizados e integração contínua com GitHub Actions</li>
+            </ul>
+            <div class="tech-line">NestJS • TypeScript • PostgreSQL • Prisma • React • Jest</div>
+            <div class="actions">
+              <a class="btn primary" href="https://github.com/eckstein75/movaiq" target="_blank" rel="noopener">Ver backend</a>
+              <a class="btn" href="https://github.com/eckstein75/movaiq-frontend" target="_blank" rel="noopener">Ver frontend</a>
             </div>
-
-            <div class="item">
-              <div class="info">
-                <span class="nome"> JavaScript </span>
-                <span class="porcent"> 70% </span>
+          </div>
+          <div class="project-visual" aria-hidden="true">
+            <div class="dashboard">
+              <div class="dash-head"><span></span><span></span><span></span></div>
+              <div class="dash-grid">
+                <div class="metric"><strong>124</strong><small>Fretes ativos</small></div>
+                <div class="metric"><strong>892</strong><small>Entregas</small></div>
+                <div class="metric"><strong>56</strong><small>Clientes</small></div>
               </div>
-              <div class="barra">
-                <div class="progresso" style="width: 70%"></div>
-              </div>
+              <div class="route"></div>
+              <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
             </div>
           </div>
         </article>
-        <!--Fim article#skills-->
-        <article id="formacao">
-          <h2>Formação</h2>
-          <div id="formacao-container">
-            <div class="curso">
-              <p class="periodo">2012 - 2014</p>
-              <h3 class="instituicao">IES/FASC</h3>
-              <p class="titulacao">Técnologo em Redes de computadores</p>
-            </div>
 
-            <div class="curso">
-              <p class="periodo">2024 - 2025</p>
-              <h3 class="instituicao">UNOPAR/ANHANGUERA</h3>
-              <p class="titulacao">
-                Pós Graduado em Computação Forense e Perícia Digital
-              </p>
-            </div>
+        <div class="cards two">
+          <article class="card">
+            <span class="tag">SEGURANÇA</span><h3>Laboratório de Pentest</h3>
+            <p>Ambiente controlado com Kali Linux e Medusa para estudo de brute force, password spraying, riscos de autenticação e práticas de mitigação.</p>
+            <a class="text-link" href="https://github.com/eckstein75/Cybersecurity-Brute-Force-com-Medusa-Kali-Linux" target="_blank" rel="noopener">Ver projeto →</a>
+          </article>
+          <article class="card">
+            <span class="tag">PORTFÓLIO</span><h3>Este site</h3>
+            <p>Portfólio responsivo desenvolvido em HTML, CSS e JavaScript, com foco em apresentação profissional, acessibilidade básica e navegação simples.</p>
+            <a class="text-link" href="https://github.com/eckstein75/projeto-portfolio" target="_blank" rel="noopener">Ver código →</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-            <div class="curso">
-              <p class="periodo">2023 - 2024</p>
-              <h3 class="instituicao">UNINTER</h3>
-              <p class="titulacao">
-                Pós Graduado em Gestão da Tecnologia da Informação
-              </p>
-            </div>
-            <div class="curso">
-              <p class="periodo">2025</p>
-              <h3 class="instituicao">UNINTER</h3>
-              <p class="titulacao">Bacharelado em Ciência da Computação</p>
-            </div>
-          </div>
-        </article>
-        <!--Fim article#formacao-->
-        <article id="projetos">
-          <h2>Projetos</h2>
-          <div id="projeto-container">
-            <div class="projeto">
-              <img
-                src="imagens/projeto-03-android.jpg"
-                alt="Projeto"
-                class="foto 03"
-              />
-              <div class="projeto-info">
-                <p class="periodo">2025</p>
-                <h3 class="titulo">Projeto Android</h3>
-                <p>Projeto construido para treinar HTML e CSS</p>
-                <details class="descricao">
-                  <summary>Saiba mais...</summary>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Alias, dolore?
-                  </p>
-                </details>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!--Fim article#projetos-->
-        <article id="contato">
-  <h2>Contato</h2>
+    <section id="formacao" class="section alt">
+      <div class="container">
+        <p class="eyebrow">FORMAÇÃO</p><h2>Formação e especialização</h2>
+        <div class="timeline">
+          <div><strong>Bacharelado em Ciência da Computação</strong><span>UNINTER — em andamento</span></div>
+          <div><strong>Desenvolvimento Front-end e Back-end</strong><span>Digital House — 2024</span></div>
+          <div><strong>Pentest Profissional</strong><span>Desec Security — 2023</span></div>
+          <div><strong>Tecnólogo em Redes de Computadores</strong><span>IES/FASC — 2014</span></div>
+        </div>
+      </div>
+    </section>
 
-  <form id="form-contato">
-    <div class="campo">
-      <label for="nome">Nome</label>
-      <input type="text" id="nome" name="nome" required />
-    </div>
+    <section id="contato" class="section contact">
+      <div class="container narrow">
+        <p class="eyebrow">CONTATO</p><h2>Vamos conversar sobre tecnologia e oportunidades</h2>
+        <p>Tenho interesse em oportunidades como Desenvolvedor Backend, Desenvolvedor Full Stack, Node.js Developer e NestJS Developer.</p>
+        <div class="actions center">
+          <a class="btn primary" href="mailto:mauroeckstein@hotmail.com">Enviar e-mail</a>
+          <a class="btn" href="https://www.linkedin.com/in/mauricio-eckstein/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/eckstein75" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <div class="campo">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
-    </div>
-
-    <div class="campo">
-      <label for="telefone">Telefone</label>
-      <input type="tel" id="telefone" name="telefone" />
-    </div>
-
-    <div class="campo">
-      <label for="mensagem">Mensagem</label>
-      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-    </div>
-
-    <button type="submit">Enviar Mensagem</button>
-  </form>
-
-  <p id="mensagem-sucesso" style="display: none;">
-    Mensagem enviada com sucesso!
-  </p>
-</article>
-      </section>
-      
-    </main>
-
-    <footer>Portifólio desenvolvido por Mauricio G. Eckstein. Fone (48)998213261</footer>
-    <script src="scripts/script.js"></script>
-  </body>
+  <footer><div class="container">© <span id="year"></span> Mauricio Gabriel Eckstein</div></footer>
+  <script src="scripts/script.js"></script>
+</body>
 </html>
